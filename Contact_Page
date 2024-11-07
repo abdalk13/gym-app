@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+
+<body BGCOLOR="black", text="white">
+
+<center>
+    <h2>Who do you want to reach?</h2>
+    <img id="PT" src="/Users/IsmarMuratagic/WebstormProjects/ContactPage/PT.PNG" width="500" height="200">
+
+    <button onclick="ptFunction()">Personal Trainer</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</center>
+<script>
+    function ptFunction(){
+        document.getElementById("demo").innerHTML="Phone number: 01234567";
+        document.getElementById("demo2").innerHTML="Email: PT@gmail.com";
+
+    }
+</script>
+
+<center>
+    <img id="Receptionist" src="/Users/IsmarMuratagic/WebstormProjects/ContactPage/Receptionist.PNG" width="500" height="200">
+    <button onclick="receptionistFunction()">Reception</button>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+</center>
+
+<script>
+    function receptionistFunction(){
+        document.getElementById("demo3").innerHTML="Working hours: 07-19";
+        document.getElementById("demo4").innerHTML="Phone number:76768891";
+        document.getElementById("demo5").innerHTML="Email: Reception@gmail.com";
+
+    }
+</script>
+
+<center>
+    <img id="Grupptranare" src="/Users/IsmarMuratagic/WebstormProjects/ContactPage/Grupptranare.PNG" width="500" height="200">
+
+    <button onclick="grupptranareFunction()">Group training</button>
+
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+
+<script>
+    function grupptranareFunction(){
+        document.getElementById("demo6").innerHTML="Phone number:10101212"
+        document.getElementById("demo7").innerHTML="Email: Grouptrainer@gmail.com";
+
+    }
+</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<body BGCOLOR="black", text="white">
+
+<center>
+<h1>Calculate strength</h1>
+</center>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program to calculate reps </title>
+    <style type="text/css">
+    </style>
+</head>
+
+<center>
+<form>
+    Body weight(kg):<input type="text" id="fiftNumber" /><br>
+    Lift(kg) :::::::::::::<input type="text" id="firstNumber" /><br>
+    <br>
+    <p> Male: <br>
+        <input type="button" onClick="benchPress()" Value="Bench Press" />
+        <input type="button" onClick="squat()" Value="Squat" />
+        <input type="button" onClick="shoulderPress()" Value="Shoulder Press" />
+
+    <p> Female: <br>
+    <input type="button" onClick="benchPressfemale()" Value="Bench Press" />
+    <input type="button" onClick="squatfemale()" Value="Squat" />
+    <input type="button" onClick="shoulderPressfemale()" Value="Shoulder Press" />
+</form>
+
+
+<br>
+<p>Your Strength Level : <br>
+    <span id = "result"></span><br>
+    <br>
+
+<p>Information about lift in relation to bodyweight : <br>
+
+    <span id = "result1"></span><br>
+    <br>
+    <span id = "result2"></span>
+</center>
+
+    <script>
+        function benchPress()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 50){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 50 && num1 < 100){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 100){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+
+        function squat()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 60){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*1.25 + "kg (125% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 60 && num1 < 110){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*1.25 + "kg (125% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 110){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*1.25 + "kg (125% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+
+        function shoulderPress()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 20){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else if (num1 >= 20 && num1 < 40){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 40){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (male): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+
+
+
+        function benchPressfemale()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 20){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 20 && num1 < 40){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else if (num1 >= 40){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.25 + "kg (25% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+
+        function squatfemale() {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 50){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else if (num1 >= 50 && num1 < 100){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else if (num1 >= 100){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.75 + "kg (75% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+
+        function shoulderPressfemale() {
+            num1 = document.getElementById("firstNumber").value;
+            num5 = document.getElementById("fiftNumber").value;
+            if (num1 > 0 && num1 < 10){
+                document.getElementById("result").innerHTML = "Beginner";
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.20 + "kg (20% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else if (num1 >= 10 && num1 < 25){
+                document.getElementById("result").innerHTML = "Intermediate";
+                document.getElementById("result").style.color = "orange";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.20 + "kg (20% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else if (num1 >= 25){
+                document.getElementById("result").innerHTML = "Pro";
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result1").innerHTML = "Your lift is " + num1/num5 + "  times your bodyweight";
+                document.getElementById("result2").innerHTML = "Pro Tip (female): You should be able to lift atleast " + num5*0.20 + "kg (20% of your own bodyweight)";
+                document.getElementById("result2").style.color = "lightblue";
+            }
+            else{
+                document.getElementById("result").innerHTML = "Data is missing.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+
+.workout-container {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+}
+.workout-name {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+#pre-planned {
+    max-width: 10%;
+}
+
+.exercise-details p {
+    font-size: 16px; /* Adjust font size */
+    margin: 0; /* Remove default margin to control spacing */
+}
+.small-image {
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+#imageContainerBottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#total-info {
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
